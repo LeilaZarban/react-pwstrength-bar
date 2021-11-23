@@ -1,5 +1,5 @@
 {
-  "name": "password-strength-npm",
+  "name": "pwstrength-bar",
   "version": "1.0.0",
   "description": "This package is based on zxcvbn. zxcvbn is a powerful library",
   "main": "./lib/pwstrength.js",
