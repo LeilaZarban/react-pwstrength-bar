@@ -21,40 +21,6 @@ module.exports = {
             test: /\.(ts|tsx)?$/,
             use: 'ts-loader',
             exclude: /node_modules/,
-        },
-        {
-            test: /\.css$/,
-            use: [
-                'style-loader',
-                "css-loader"
-            ],
-            exclude: /\.module\.css$/,
-        },
-        {
-            test: /\.module\.css$/,
-            use: [
-                'style-loader',
-                "@teamsupercell/typings-for-css-modules-loader",
-                {
-                    loader: "css-loader",
-                    options: {
-                        importLoaders: 1,
-                        modules: true
-                    }
-                }
-            ]
-        },
-        {
-            test: /\.(svg)$/i,
-            use: [
-                {
-                    loader: 'url-loader',
-                    options: {
-                        limit: 8192,
-                        encoding: false
-                    },
-                },
-            ],
         }
     ],
   },
