@@ -5,7 +5,7 @@ import { PWCountainer, PWDiv } from "./PasswordStrengthStyle";
 interface IPWStrength {
   password: string;
   scoreWords?: string[];
-  colors?: string[];
+  barColors?: string[];
   width?: string;
   height?: string;
   shapeEdge?: string;
@@ -23,7 +23,7 @@ const PasswordStrength: React.FC<IPWStrength> = (props) => {
     "Strong",
     "Very Strong",
   ];
-  const colors = props.colors ?? [
+  const colors = props.barColors ?? [
     "#ed5565",
     "#dd772c",
     "#f8ac59",
