@@ -11,7 +11,6 @@ interface IPWStrength {
   shapeEdge?: string;
   backgroundColor?: string;
   scoreWordClass?: string;
-  onChangeScore?: () => void;
 }
 
 const PasswordStrength: React.FC<IPWStrength> = (props) => {
@@ -50,9 +49,7 @@ const PasswordStrength: React.FC<IPWStrength> = (props) => {
         height={props.height}
         shapeEdge={props.shapeEdge}
       >
-        <span className={props.scoreWordClass} onChange={props.onChangeScore}>
-          {scoreWord}
-        </span>
+        <span className={props.scoreWordClass}>{scoreWord}</span>
       </PWDiv>
     </PWCountainer>
   );
