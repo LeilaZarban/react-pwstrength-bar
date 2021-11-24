@@ -29,48 +29,16 @@ const password ;
 
 ## Props
 
-#### `password`: string
-
-- isRequired: true
-- default: ''
-
-#### `scoreWords`: string[]
-
-- isRequired: false
-- default: ["Weak", "Medium", "Normal", "Strong", "Very Strong"];
-
-#### `barColors`: string[]
-
-- isRequired: false
-- default: ["#ed5565", "#dd772c", "#f8ac59", "#2b90ef", "#25c281"]
-
-#### `width`: string
-
-- isRequired: false
-- default: "100%"
--
-
-#### `height`: string
-
-- isRequired: false
-- default: "20px"
--
-
-#### `shapeEdge`: string
-
-- isRequired: false
-- default: "circle"
-- examples: "circle", "square"
-
-#### `backgroundColor`: string
-
-- isRequired: false
-- default: "#ddd"
-
-#### `scoreWordClass`: string
-
-- isRequired: false
-- default: ''
+| Prop            | Type      | Default                                                 | Required | Description                                                                | Example                                         |
+| --------------- | --------- | ------------------------------------------------------- | -------- | -------------------------------------------------------------------------- | ----------------------------------------------- |
+| password        | string    | ''                                                      | True     | This is password that bar color and word is set based on it                | `jdhgfsd`                                       |
+| scoreWords      | string[5] | ["Weak", "Medium", "Normal", "Strong", "Very Strong"]   | False    | determine the word that is written on the bar                              | any string array with length=5                  |
+| barColors       | string[5] | ["#ed5565", "#dd772c", "#f8ac59", "#2b90ef", "#25c281"] | False    | determine the color of the bar                                             | any string array with length=5                  |
+| width           | string    | '100%'                                                  | False    | width of the bar                                                           | you can set it by % or px like "60%" or "500px" |
+| height          | string    | '20px'                                                  | False    | height of the bar                                                          | "30px"                                          |
+| shapeEdge       | string    | "circle"                                                | False    | the shape of the edge of the bar                                           | it can be "circle" or "square"                  |
+| backgroundColor | string    | "#ddd"                                                  | False    | the default color of the bar                                               | any color like "#000"                           |
+| scoreWordClass  | string    | ''                                                      | False    | the class to set font and any style of the word that is written on the bar | any string name of a css class                  |
 
 ## Browser support
 
