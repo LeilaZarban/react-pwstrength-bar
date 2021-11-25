@@ -21,7 +21,7 @@ $ yarn add react-pwstrength-bar
 ## Usage
 
 ```js
-import PasswordStrengthBar from 'react-password-strength-bar';
+import PasswordStrengthBar from 'react-pwstrength-bar';
 
 const password ;
 <PasswordStrengthBar password={password} />
